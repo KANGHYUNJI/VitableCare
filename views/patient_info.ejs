@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+    <form method="POST">
+
+        <h1> 환자정보가져오기</h1><br>
+        <input type="submit" value="환자정보 가져오기" onclick="javascript:form.action='/patient_info';" /><br>
+
+
+        <div id='patient_information'>
+
+            <% if(data.length != 0) { %>
+            <% for(var i = 0; i<data.length; i++){ %>
+            <%= data[i].patient_name %><br>
+            <%= data[i].patient_age %><br>
+            <%= data[i].patient_sex %><br>
+            <%= data[i].patient_social_security_number %><br>
+            <%= data[i].patient_bpm %><br>
+            <%= data[i].patient_room %><br>
+            <%= data[i].patient_disease %><br>
+            <%= data[i].patient_hospitalization_data %>
+            <%= data[i].doctor_name %><br>
+            <%= data[i].temperature %><br>
+            <%= data[i].guardian_name %><br>
+            <%= data[i].guardian_phone %>
+            <hr>
+            <% } %>
+
+            <% }else if(data.length == 0){ %>
+            <%= 환자정보없음 %>
+            <br>
+            <% } %>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

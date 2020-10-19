@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vitable Care</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Google fonts - Popppins for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,800">
+    <!-- orion icons-->
+    <link rel="stylesheet" href="/css/orionicons.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/css/style.sea.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png?3">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+    <link rel="stylesheet" href="/css/sbbb.css">
+</head>
+
+<body onload="createTimeline()">
+    <!-- navbar-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow"><a href="#" class="sidebar-toggler text-gray-500 mr-4 mr-lg-5 lead"><i class="fas fa-align-left"></i></a><a class="navbar-brand font-weight-bold text-uppercase text-base">Vitable_care</a>
+        </nav>
+    </header>
+    <div class="d-flex align-items-stretch">
+        <div id="sidebar" class="sidebar py-3">
+            <div class="text-gray-400 text-uppercase px-3 px-lg-4 py-4 font-weight-bold small headings-font-family">MAIN</div>
+            <ul class="sidebar-menu list-unstyled">
+                <li class="sidebar-list-item"><a href="/patient_list" class="sidebar-link text-muted"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
+                <li class="sidebar-list-item"><a href="/bio_information" class="sidebar-link text-muted active"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Bio Info</span></a></li>
+                <li class="sidebar-list-item"><a href="/patient_information" class="sidebar-link text-muted"><i class="o-table-content-1 mr-3 text-gray"></i><span>Patient Info</span></a></li>
+                <li class="sidebar-list-item"><a href="/sign_up" class="sidebar-link text-muted"><i class="o-survey-1 mr-3 text-gray"></i><span>Sign up</span></a></li>
+                <li class="sidebar-list-item"><a href="/login_session" class="sidebar-link text-muted"><i class="o-exit-1 mr-3 text-gray"></i><span>Logout</span></a></li>
+            </ul>
+
+        </div>
+        <div class="page-holder w-100 d-flex flex-wrap">
+            <div class="container-fluid px-xl-5">
+                <section class="py-5">
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2 class="mb-0 d-flex align-items-center">심박수</h2>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="chart-holder mt-5 mb-5">
+                                        <canvas id="chart" width="700" height="400"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 py-5">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h3 class="mb-0 d-flex align-items-center">산소포화도</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="chart-holder">
+                                                <canvas id="pieChart1"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 py-5">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h3 class="mb-0 d-flex align-items-center">체온</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="chart-holder">
+                                                <canvas id="pieChart2"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-0 patient_card col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h2 class="mb-0 d-flex align-items-center">환자정보</h2>
+                                </div>
+                                <div class="mt-5 mb-5 card-body">
+                                    <br>
+                                    <label>환자명<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="patient_name"><%= data[0].patient_name %></span></label>
+                                    <label>나이<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="patient_age"><%= data[0].patient_age %></span></label>
+                                    <label>주민등록번호<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="patient_social_security_number"><%= data1.substring(0,8); %>******</span></label>
+                                    <label>병실번호<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="patient_room"><%= data[0].patient_room %>호</span></label>
+                                    <label>성별<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="patient_sex"><%= data[0].patient_sex %></span></label>
+                                    <label>병명<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="patient_disease"><%= data[0].patient_disease %></span></label>
+                                    <label>입원날짜<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="hospitalization_date"><%= data[0].hospitalization_date %></span></label>
+                                    <label>담당의<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="doctor_name"><%= data[0].doctor_name %></span></label>
+                                    <label>보호자명<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="guardian_name"><%= data[0].guardian_name %></span>
+                                    </label><label>보호자전화번호<span class="patient_info_text form-control border-0 shadow form-control-sm text-sea1 patient-textbox" name="guardian_phone"><%= data[0].guardian_phone %></span></label>
+                                    <br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left text-primary">
+                    <p class="mb-2 mb-md-0">Your company &copy; 2018-2020</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right text-gray-400">
+                    <p class="mb-0">Design by <a href="https://bootstrapious.com/admin-templates" class="external text-gray-400">Bootstrapious</a></p>
+                    <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="/vendor/chart.js/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/charts-custom.js"></script>
+    <script src="/js/front.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="/javascripts/smoothie.js"></script>
+    <script type="text/javascript" src="/javascripts/graph1.js"></script>
+    <script type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

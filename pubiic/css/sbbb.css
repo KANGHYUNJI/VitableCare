@@ -1,0 +1,54 @@
+.cnt {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.btn-outline-success {
+
+    background-color: transparent;
+    color: #379392;
+    background-image: none;
+    border-color: transparent;
+}
+
+.btn-outline-success:hover {
+    background-color: #379392;
+}
+
+.patient_card {
+    margin: auto;
+    width: 30%;
+}
+
+.sb{
+    width: 60%;
+}
+
+.card-btn {
+    width: 150px;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+}
+
+label {
+    width: 100%;
+}
+
+.patient_info_text {
+    width: 50%;
+    float: right;
+}
+
+@media (max-width:768px) {
+    .patient_card {
+        width: 100%;
+    }
+
+    .sb{
+    width: 100%;
+}
+
+}
