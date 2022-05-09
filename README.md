@@ -17,15 +17,15 @@
 &nbsp;&nbsp;&nbsp;&nbsp; < 회원가입 >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; < 로그인 >   
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://user-images.githubusercontent.com/50947775/165086014-ccdf660b-b37e-4551-aa85-1d84b94031a8.png" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/50947775/165086014-ccdf660b-b37e-4551-aa85-1d84b94031a8.png" width="300" height="150">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://user-images.githubusercontent.com/50947775/165086104-12482743-d2b3-4e6c-85c6-99b3c4df332b.png" width="400" height="200">   
+<img src="https://user-images.githubusercontent.com/50947775/165086104-12482743-d2b3-4e6c-85c6-99b3c4df332b.png" width="300" height="150">   
 &nbsp;&nbsp;&nbsp;&nbsp; < 메인 >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; < 상세정보 >   
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://user-images.githubusercontent.com/50947775/165078589-37bb0706-2700-4397-b223-fa7c5f2b74d5.png" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/50947775/165078589-37bb0706-2700-4397-b223-fa7c5f2b74d5.png" width="300" height="150">
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://user-images.githubusercontent.com/50947775/165085561-8d5e9fcd-9a6c-41b7-b4fb-42d507e559e2.png" width="400" height="200">   
+<img src="https://user-images.githubusercontent.com/50947775/165085561-8d5e9fcd-9a6c-41b7-b4fb-42d507e559e2.png" width="300" height="150">   
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp; <모바일버전>   
 &nbsp;&nbsp;
